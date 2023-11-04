@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .unorder{
+            width: 100%;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2%;
+        }
+        .unorder li {
+            list-style: none;
+            padding: 1%;
+            margin: 1%;
+            background-color: #CE9461;
+            border: 2px solid black;
+        }
+        .unorder li:hover{
+            background-color: #EB5353;
+            color: white;
+            cursor: pointer;
+        }
+
+        .active{
+            background-color:#EB5353 ;
+        }
+    </style>
+    <ul class="unorder">
+        <li class="items" data-item="Mobile">All</li>
+        <li class="items" data-item="Mobile">Mobile</li>
+        <li class="items" data-item="Shoes">Shoes</li>
+        <li class="items" data-item="Bags">Bag</li>
+        <li class="items" data-item="Laptops">Laptop</li>
+    </ul>
+    <div class="container">
+        <div class="imgDiv" data-filter=Mobile>
+            <img src="brown.sunset.jpeg" width="100%" alt="">
+        </div>
+        <div class="imgDiv" data-filter="Shoes">
+            <img src="brown.sunset.jpeg" width="100%" alt="">
+        </div>
+        <div class="imgDiv" data-filter="Bags">
+            <img src="brown.sunset.jpeg" width="100%" alt="">
+        </div>
+        <div class="imgDiv" data-filter="Laptops">
+            <img src="brown.sunset.jpeg" width="100%" alt="">
+        </div>
+    </div>
+    <script>
+        let item = document.getElementsByClassName('item');
+        for (let a = 0; item.length > a; a++) {
+            item[a].addEventListener('click', function (){
+                for (let k = 0; item.length > k; k++) {
+                    item[k].classList.remove("active");
+                }
+                item[a].classlist.add("active");
+                let filitem = item[a].getAttribute('data-item');
+                console.log(filitem);
+                let img = document.getElementsByClassName('imgDiv');
+                for (let y = 0; img.length > y; y++) {
+
+                let filter = (img[y].getAttribute('data-filter'));
+                img[y].style.display = 'none';
+
+                if(filter == filitem) {
+                    img[y].style.display = 'block';
+                }
+                else if (filitem == 'all'){
+                    img[y].style.display = 'block';
+                }
+            }
+
+            });
+        }
+</script>
+</body>
+</html>

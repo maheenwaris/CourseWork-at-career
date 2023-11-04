@@ -1,0 +1,242 @@
+/* navbar */
+.hov a {
+    color:#999999;
+    border: 1px solid #999999;
+    border-radius: 5px;
+}
+.hov a:hover{   
+    background-color: #c7a17a;
+    border-radius: 10%;
+}
+.hov button:hover{   
+    background-color: #c7a17a;
+    border-radius: 10%;
+}
+.nav-icon{
+    font-size: x-large;
+    color: white;
+    padding-left: 13%;
+}
+.nav-icon i:hover{
+    background-color: #c7a17a;
+    color: white;
+    border-radius: 10%;
+}
+.navbar-btn a{
+    text-decoration: none;
+    color:white;
+}
+.navbar-btn:hover{
+    background-color: #c7a17a;
+    color: white;
+}
+
+/* start */
+.start{
+    background-image: url("../img/5.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+}
+.strt{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    font-size: 60px;
+    font-style: italic;
+    color: white;
+}
+
+/* Home */
+.home{
+    background-image: url("../img/home0.jpg");
+    height: 80vh;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home1{
+    background-image: url("../img/home1.png");
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin-top: 7%;
+}
+.home2{
+    font-size: 70px;
+}
+.home3{
+    background-color: #c7a17a;
+    color: white;
+    padding: 2% 5% 2% 5%;
+}
+.home4{
+    padding: 2% 5% 2% 5%;
+}
+.home4:hover{
+    color: #c7a17a;
+}
+.home5{
+    background-color: #f3f3f3;
+}
+.home5 b:hover{
+    color: #c7a17a;
+    cursor: pointer;
+}
+.home6:hover{
+    padding: 2%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-style:dashed;
+    border-radius: 10px;
+    background-color: #c7a17a;
+}
+.home7{
+    background-image: url("../img/back.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200vh;
+    width: 100%;
+    color: white;
+}
+.home8 b:hover{
+    color: #c7a17a;
+}
+.home8 p{
+    color: #8d877f;
+}
+.home8 img:hover{
+    padding: 3%;
+    opacity: 0.7;
+}
+.home9 img:hover{
+    padding: 5px;
+    opacity: 0.5;
+}
+.home9 b:hover{
+    color: #c7a17a;
+}
+
+/* About US */
+.abt-btn{
+    background-color:#c7a17a;
+    color: white;
+    border-radius: 5px;
+}
+.abt-btn:hover{
+    background-color:black;
+    color: white;
+}
+.abt1 img{
+    border-radius: 60px;
+    height: 70%; 
+    
+}
+.abt2{
+    background-image: url("../img/abt2.png");
+}
+.abt2 b{
+    font-size: 90px;
+}
+.abt3 h1{
+    text-align: end;
+}
+
+/* About Me */
+.abtm-info{
+    border: 3px solid rgb(230, 225, 225);
+    width: 60%;
+}
+.abtm1{
+    background-color: #f6f6f6;
+}
+
+/* contact us */
+.cntct1{
+    background-color: #f6f6f6;
+}
+.cntct-icon i{
+    font-size: x-large;
+    background-color: #eeebeb;
+}
+.btn-cntct{
+    background-color:#c7a17a;
+    color: white;
+}
+.btn-cntct:hover{
+    background-color:black;
+    color: white;
+}
+
+/* menu */
+.menu1{
+    background-color:#f0ecec;
+    padding: 1%;
+    padding-right: 2%;
+}
+.menu1 p{
+    color: #8d877f;
+}
+.menu1 h1{
+    color: #c7a17a;
+    font-size: 50px;
+}
+.menu1 b:hover{
+    color: #c7a17a;
+}
+.menu1 img:hover{
+    padding: 3%;
+    opacity: 0.7;
+}
+
+/* resrevation from */
+.reserve1{
+    border: 5px solid black;
+    border-radius: 8px;
+}
+.reserve1:hover{
+    border-style: double;
+    transition: 10s;
+    opacity: 0.7;
+}
+
+
+/* footer */
+.foot{
+    background-image: url("../img/back.webp");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    /* background-color: black; */
+    color: white;
+    padding: 1%;
+    font-family: "Roboto", sans-serif;;
+}
+.footbtn input{
+    background-color: #1B1B1B;
+}
+.footbtn button{
+    background-color: #c7a17a;
+    border-radius: 5px;
+
+}
+.foot-icon{
+    font-size: larger;
+}
+.foot-icon>i:hover{
+    color: white;
+    cursor: pointer;
+    background-color:#c7a17a;
+}
+.foot-icon i{
+    background-color: black;
+    color: #c7a17a;
+    padding: 2%;
+    height: 100%;
+    width: auto;
+}
+.foot-pic :hover{
+    padding: 1%;
+    color: #c7a17a;
+    border-bottom: #c7a17a;
+}

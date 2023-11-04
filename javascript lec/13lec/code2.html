@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .unorder{
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            /* background-color: aquamarine; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .unorder>li{
+            /* background-color: aquamarine; */
+            list-style: none;
+            padding: 15px 10px;
+            /* color: black; */
+            margin-right: 12px;
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+        .unorder>li:hover{
+            background-color: aquamarine;
+            color: white;
+            cursor: pointer;
+        }
+        .active{
+            background-color: brown;
+            color: white;
+        }
+        .container{
+            width: 100%;
+            height: 40vh;
+            display: flex;
+        }
+        .imgDiv{
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+        .imgDiv>img{
+            display: flex;
+        }
+    </style>
+    <ul class="unorder">
+        <li class="item" data-item="all">all</li>
+        <li class="item" data-item="Mobile">Mobile</li>
+        <li class="item" data-item="Shoes">Shoes</li>
+        <li class="item" data-item="Bags">Bags</li>
+        <li class="item" data-item="Laptop">Laptop</li>
+    </ul>
+    <div class="container"  >
+        <div class="imgDiv"data-filter="Laptop" >
+            <img src="L1.jpg" width="100%" alt="">
+            </div>
+            <div>
+            <img src="m1.jpg" width="50%" alt="">
+
+        </div>
+        <div class="imgDiv"data-filter="Shoes" >
+            <img src="s1.jpg" width="100%" alt="">
+        </div>
+        <div class="imgDiv"data-filter="Mobile" >
+            <img src="b1.jpg" width="100%" alt="">
+        </div>
+        <div class="imgDiv"data-filter="Bags" >
+            <img src="L2.jpg" width="100%" alt="">
+        </div>
+    </div>
+    <script>
+        let item= document.getElementsByClassName("item");
+        for(let a=0;item.length>a;a++){
+            item[a].addEventListener("click",function(){
+                // console.log(item[a]);
+                for(let k=0;item.length>k;k++){
+                    // console.log(item[k]);
+                    item[k].classList.remove("active");
+                }
+                item[a].classList.add("active");
+                let x= item[a].getAttribute('data-item');
+                // console.log(item[a]);
+        let img=document.getElementsByClassName('imgDiv');
+        for(let y=0;img.length>y; y++){
+            // console.log(img[y]);
+        let z=img[y].getAttribute('data-filter');
+        img[y].style.display='none';
+        if(z==x){
+               img[y].style.display='block';
+        } 
+        else if(x=='all'){
+            img[y].style.display='block';
+        }
+        }});}
+    </script>
+</body>
+</html>

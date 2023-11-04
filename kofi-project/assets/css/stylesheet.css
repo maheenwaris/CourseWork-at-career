@@ -1,0 +1,44 @@
+.one{
+    margin-left: 20px;
+    color: #333333;
+ }
+.nav1:hover{
+    color: #c7a17a;
+}
+.about{
+    font-family: sans-serif;        
+}
+.client{
+    background-color: #c7a17a;
+}
+.client1{
+    border: 1px solid rgb(241, 234, 234);
+}
+
+
+.footer{
+    font-family: sans-serif;
+    font-size: medium;
+    background-image: url('foot.jpg');
+}
+.footer-li:hover{
+    color:#c7a17a;
+    cursor: pointer;
+}
+.one{
+margin-left: 20px;
+color: #333333;
+
+}
+.one:hover{
+color: #c7a17a;}
+.bgimg{
+background-image: url(images/coffee-beans.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+
+
+

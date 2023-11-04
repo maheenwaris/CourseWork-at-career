@@ -1,0 +1,120 @@
+.wrapper {
+    width: 100%;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
+.slrmain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slrmain h1 {
+    color: white;
+}
+.slrmain img {
+    height: 70vh;
+    width: 50%;
+}
+.slrmain a {
+    text-decoration: none;
+    color: white;
+    border: solid 2px rgb(116, 4, 69) ; 
+}
+.glxymain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.glxymain h1 {
+    color: white;
+}
+.glxymain img {
+    height: 70vh;
+    width: 50%;
+}
+.glxymain a {
+    text-decoration: none;
+    color: white;
+    border: solid 2px rgb(116, 4, 69) ; 
+}
+.moonmain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.moonmain h1 {
+    color: white;
+}
+.moonmain img {
+    height: 85vh;
+    width: 50%;
+}
+.moonmain a {
+    text-decoration: none;
+    color: white;
+    border: solid 2px rgb(116, 4, 69) ; 
+}
+.sunmain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sunmain h1 {
+    color: white;
+}
+.sunmain img {
+    height: 70vh;
+    width: 50%;
+}
+.sunmain a {
+    text-decoration: none;
+    color: white;
+    border: solid 2px rgb(116, 4, 69) ; 
+}
+
+
+
+
+
+
+
+
+
+
+.slr1 {
+    height: 70vh;
+    width: 50%;
+}
+.slr2 {
+    height: 70vh;
+    width: 50%;
+}
+.slr3 {
+    height: 70vh;
+    width: 40%;
+}
+.slr4 {
+    height: 70vh;
+    width: 40%;
+}
+.slr5 {
+    height: 70vh;
+    width: 40%;
+}
+
+
+.glxy1 {
+    height: 90vh;
+    width: 50%;
+}
+
+
+.moon1 {
+    height: 90vh;
+    width: 50%;
+}
+.moon2 {
+    height: 90vh;
+    width: 60%;
+}

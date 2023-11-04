@@ -1,0 +1,296 @@
+<?php 
+include_once 'navbar.php'
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <!-- Boxicons CSS testimoial -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="icon" href="img/logo.jpg" type="image/icon type">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Al-Sadat</title>
+</head>
+<body>
+    <div class="herosection">
+    <div class="container">
+        <div class="row d-flex mt-5">
+            <div class="col-md-7">
+               <img class="shadow p-3 mb-5 bg-white rounded about"style="width:100%" src="img/home-1.jpg" alt="" srcset="">
+            </div>
+            <div class="col-md-5 mt-5">
+                 <h3>We make learning interesting <br> through creativity</h3>
+                 <br>
+                 <h2>Al-Sadat School</h2>
+                 <p class="mt-3"><b>DICSOVER|LEARN|PLAY</b></p>
+                 <br>
+                 <img src="img/hero-2.PNG" class="mt-5 pic" style="margin-left:-30%; width: auto;" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- hero section ends -->
+    <div class="container-fluid blue">
+        <br>
+          <h1>Our Mission</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, aspernatur?<br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, porro.<br>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo rerum eveniet necessitatibus!<br>
+     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non reprehenderit sed exercitationem minima esse!<br>
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, sequi?</p>
+     <br>
+     <button class="btn mb-3"><b>Get in touch</b></button>
+     <br>
+    </div>
+    <!-- our mission section ends -->
+    <div class="about white">
+     <div class="herosection">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-6 mt-5">
+                    <h2>About us</h2>
+                    <p class="mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias ducimus commodi nulla assumenda facilis dicta ipsum iste atque optio nam?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed maxime quae temporibus quos quis voluptates asperiores perferendis. Quia, nulla obcaecati.
+                    </p>
+                    <button class="btn mt-2">Discover More</button>
+                </div>
+                <div class="col-md-6 mt-5">
+               <img src="img/home-3.PNG" style="width:100%;" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div> 
+    </div>
+    <!-- about section ends -->
+    <!-- <br><br><br>
+    <div class="container-fluid">
+        <div class="row scroll">
+          <div class="col-md-12">
+            <div class="counter">
+                <div class="up">
+                  <span class="num" data-val="1000">000</span>
+                  <span class="text-center" style="color:black;">Team Members</span>
+                  <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                </div>
+          
+                <div class="up">
+                  <span class="num" data-val="340">000</span>
+                  <span class="text-center" style="color:black;">Satisfied Customers</span>
+                  <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                </div>
+          
+                <div class="up">
+                  <span class="num" data-val="12">000</span>
+                  <span class="text-center" style="color:black;">Successfull Years</span>
+                  <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                </div>
+          
+                <div class="up">
+                  <span class="num" data-val="1500">+</span>
+                  <span class="text-center" style="color:black;">Successfull Projects</span>
+                 <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>        
+                </div>
+              </div>
+          </div>
+        </div>
+      </div> -->
+      <!--scroll pic ends-->
+
+      <!-- section -->
+      <section>
+
+      </section>
+      <!-- section -->
+  
+    <div class="white">
+        <div class="container">
+            <div class="row d-flex mt-5">
+                <div class="col-md-6">
+                    <iframe  height="315" width="100%"  src="https://www.youtube.com/embed/k6h1sPJUcac"
+                     title="YouTube video player" frameborder="0" 
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6 mt-3">
+                     <h2>Watch What Our Parents <br>Have Said About Us</h2>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, recusandae.<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, rerum totam nesciunt autem libero eligendi.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores libero cumque magni.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quas.</p>
+            <button class="btn mt-2">Watch More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section ends -->
+    <div class="row">
+      <h1 style="text-align: center; justify-content: center; align-items: center;margin-top: 2%;color:#003C56;">
+        Testimonails</h1>
+    </div>
+    <section class="container-fluid mySwiper mt-5" style="overflow-x:hidden;">
+      <div class="testimonial mySwiper">
+        <div class="testi-content swiper-wrapper">
+          <div class="slide swiper-slide">
+            <img src="img/about -img.jpg" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Client 1</span>
+              <span class="job">Web Developer</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="img/about -img.jpg" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Client 2</span>
+              <span class="job">Web Developer</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="img/about -img.jpg" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Client 3</span>
+              <span class="job">Web Developer</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- <div class="blue">
+        <div class="container-fluid mt-5">
+            <div class="row mt-5">
+                <h2 class="mt-5">Testimonails</h2>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <p class="mt-3"><b>"</b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, recusandae.<br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, rerum totam nesciunt autem libero eligendi.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores libero cumque magni.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quas.<b>"</b></p>
+                <button class="btn mt-2 mb-3">Learn More</button>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div> -->
+   <!-- section ends -->
+    <div class="white">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6">
+                   <h2>Our Awards</h2>
+             <p class="mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, recusandae.<br>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, rerum totam nesciunt autem libero eligendi.
+             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores libero cumque magni.
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quas.</p>
+            <button class="btn mt-2 mb-3">Learn More</button>
+         </div>
+                <div class="col-md-6">
+                    <img src="img/home-2.PNG" style="width:100%;" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section ends -->
+       <br><br>
+    <div class="container-fluid">
+        <div class="row d-flex big">
+          <div id="particles-js">
+          </div>
+          <div class="basic">
+            <div class="row d-flex mt-5">
+              <div class="col-md-2"></div>
+              <div class="col-md-7">
+            <p style="color: white; margin-top:-10%;"><b>Subscribe for newsletter</b></p>
+            <input type="email" placeholder="Enter your email here..." style="width:50%;height:6vh;"></div>
+            <div class="col-md-2 blue">
+              <button class="btn">Join us &rarr;</button>
+            </div>
+            </div>
+          </div>
+      </div>
+    </div> 
+<!-- section ends -->
+<!-- <br><br><br><br><br><br><br><br><br><br> -->
+<!-- map -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217898.23325185242!2d72.94921477280307!3d31.42349531023014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392242a895a55ca9%3A0xdec58f88932671c6!2sFaisalabad%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1664388015158!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- map -->
+<?php
+include_once 'footer.php'
+?>
+
+
+
+
+
+   <script type="text/javascript" src="js/particles.js"></script>
+   <script type="text/javascript" src="js/app.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+ <!--counter up-->
+ <script>
+    let valueDisplays = document.querySelectorAll(".num");
+let interval = 4000;
+
+valueDisplays.forEach((valueDisplay) => {
+let startValue = 0;
+let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+let duration = Math.floor(interval / endValue);
+let counter = setInterval(function () {
+startValue += 1;
+valueDisplay.textContent = startValue;
+if (startValue == endValue) {
+  clearInterval(counter);
+}
+}, duration);
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- //  Swiper JS testimomnials -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- // JavaScript testimoinals -->
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>

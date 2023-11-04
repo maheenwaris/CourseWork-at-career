@@ -1,0 +1,176 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* navbar */
+/* :root {
+    --color0: #fff;
+    --color1: #F25CA2;
+    --color2: rgb(31,1,48);
+    --color3: #dfe3ec;
+    --color4: rgb(31, 1, 48);
+    --color5: #0B9ED9;
+    --color6: #000;
+    --color7:#fcc603;
+}
+.NAVBAR {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+.navbody {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color3);
+}
+.navheader {
+    width: 100%;
+    background-color: var(--color4);
+} */
+
+
+
+
+
+
+/* About us */
+.abt1{
+    display: flex;
+}
+.abt2{
+    background-color: #002147;
+    color: white;
+}
+.abt2:hover{
+    background-color: orange;
+}
+.abt3{
+    margin-left: 5%;
+}
+@media screen AND (max-width:700px) {
+    .abt1{
+        display: block;
+    }
+    .abt3{
+        margin-left: 0%;
+    }
+}
+.abt_tchr2{
+    border: 3px solid linear black;
+}
+.abt_tchr3 a{
+    color: #002147;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* contact us */
+.cntct_head0{
+    background-image: url("img/cntct1.jpg");
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.cntct_head1{
+    padding-top: 7%;
+    padding-left: 14%;
+}
+.cntct_head2{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+.cntct_head2:hover{
+    color: orange;
+}
+
+.cntct0{
+    display: flex;
+}
+.cntct4{
+    padding-left: 5%;
+}
+.cntct1 {
+    color: grey;
+}
+.cntct2 {
+    background-color:#002147 ;
+    color:white;
+}
+.cntct2:hover{
+    background-color: orange; 
+    color: white;
+}
+.cntct3 a:hover{
+    color: orange;
+}
+@media screen  AND (max-width:700px) {
+    .cntct_head1{
+        padding-top: 16%;
+        padding-left: 6%;
+    }
+    .cntct0{
+        display: block;
+    }
+    .cntct4{
+        padding-left: 0%;
+    }
+}
+
+
+
+
+/* futer */
+.fut0{
+    background-color: #002147;
+    color: white;
+    font-family: sans-serif;
+}
+.fut1{
+    display: flex ;
+}
+.fut2{
+    padding-left: 4%;
+}
+.fut3{
+    display: flex;
+    justify-content: space-between;
+}
+.fut4{
+    margin-left: 3%;
+}
+.fut5{
+    margin-right: 5%;
+}
+.fut6 a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.fut6 a:hover {
+    color:orange;
+    border-bottom: 1px solid orange;
+    /* border-top: 1px solid orange; */
+}
+.fut7 :hover{
+    opacity: 0.6;
+}
+@media screen  AND (max-width:700px) {
+    .fut1{
+        display: block;
+    }
+    .fut3{
+        display: block;
+    }
+   .fut4{
+        display: flex;
+        justify-content: center;
+   }
+   .fut5{
+        display: flex;
+        justify-content: center;
+        margin-left:8%;
+   }
+}

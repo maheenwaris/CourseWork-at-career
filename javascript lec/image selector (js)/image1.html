@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <style>
+        input{
+            background-color: brown;
+            color: black;
+            padding: 3%;  
+            box-shadow: -3px -3px 7px black, 3px 3px 7px black;
+        }
+        .file-input{
+            border: 10px solid black;
+        }
+    </style> -->
+
+    <center><input id="file-input" type="file" multiple></center>
+    <div id="preview"></div>
+
+<script>
+    function previewImages() {
+        var preview = document.querySelector('#preview');
+        if (this.files) {
+          [].forEach.call(this.files, readAndPreview);
+        }
+        function readAndPreview(file) {
+          var reader = new FileReader(); 
+          reader.addEventListener("load", function() {
+            var image = new Image();
+            image.height = 100;
+            image.title  = file.name;
+            image.src    = this.result;
+            preview.appendChild(image);
+          });
+          reader.readAsDataURL(file); 
+        }
+      }
+      document.querySelector('#file-input').addEventListener("change", previewImages);
+</script>
+
+</body>
+</html>

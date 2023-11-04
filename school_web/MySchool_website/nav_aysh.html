@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html(lang="en")>
+ <head>
+   <meta(charset="UTF-8")
+   meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")>
+   <title>Navbar</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+   <link(rel="stylesheet", href="assets/css/index.css")>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+   integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+   crossorigin="anonymous"></script>
+    </head>
+    <style>
+*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+:root {
+  --color0: #fff;
+  --color1: #F25CA2;
+  --color2: rgb(31,1,48);
+  --color3: #dfe3ec;
+  --color4: rgb(31, 1, 48);
+  --color5: #0B9ED9;
+  --color6: #000;
+  --color7:#fcc603;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color3);
+}
+
+header {
+  width: 100%;
+  background-color: var(--color4);
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 1.3rem;
+}
+
+nav {
+
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  background-color: var(--color7);
+  width: 9rem;
+  color:#021859;
+  text-align: center;
+  align-items: center;
+  height: 8rem;
+  font-size:11px;
+  font-weight: bolder;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  border-radius: 50%;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  text-decoration: none;
+  display: block;
+  margin: 0 2rem;
+  color: var(--color0);
+  text-transform: capitalize;
+  transform: scale(0);
+  transition: transform 650ms;
+}
+
+.nav-item {
+  position: relative;
+  line-height: 8rem;
+  transition-delay: .4s;
+  visibility: hidden;
+}
+
+.nav-item::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color1);
+  left: 0;
+  bottom:0;
+  align-items: center;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 650ms cubic-bezier(.68, -.55, .265, 1.55);
+}
+
+.nav-item:hover::before {
+  transform: scaleX(1);
+  
+  transform-origin:left;
+} 
+
+/* Hamburger Menu */
+.hamburger {
+  width: 3.6rem;
+  height: 1.8rem;
+  position: relative;
+  cursor: pointer;
+  line-height: 5rem;
+  z-index: 1500;
+}
+
+.hamburger .line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--color0);
+  position: absolute;
+  display: block;
+  right: 0;
+  transition: all 650ms;
+}
+
+.hamburger .line:nth-child(1) {
+  top: 0;
+}
+
+.hamburger .line:nth-child(2) {
+  top: 50%;
+  margin-top: -1px;
+  width: 2.8rem;
+}
+
+.hamburger .line:nth-child(3) {
+  top: 100%;
+  margin-top: -2px;
+  width: 4rem;
+}
+
+.hamburger.active .line:nth-child(1) {
+  transform: translateY(.8rem) rotate(45deg);
+  width: 4rem;
+  background-color:white;
+}
+
+.hamburger.active .line:nth-child(2) {
+  opacity: 0;
+  background-color:white;
+}
+
+.hamburger.active .line:nth-child(3) {
+  transform: translateY(-.8rem) rotate(-45deg);
+  width: 4rem;
+  background-color:white;
+}
+
+
+.nav-list.active .nav-link {
+  transform: scale(1);
+}
+
+.nav-list.active .nav-item {
+  transition-delay: initial;
+  visibility: visible;
+}
+
+.nav-list.active .nav-item:nth-child(1) .nav-link {
+  transition-delay: .5s;
+}
+
+.nav-list.active .nav-item:nth-child(2) .nav-link {
+  transition-delay: .4s;
+}
+
+.nav-list.active .nav-item:nth-child(3) .nav-link {
+  transition-delay: .3s;
+}
+
+.nav-list.active .nav-item:nth-child(4) .nav-link {
+  transition-delay: .2s;
+}
+
+.nav-list.active .nav-item:nth-child(5) .nav-link {
+  transition-delay: .1s;
+}
+
+/* reverse animation */
+
+.nav-list .nav-item:nth-child(1) .nav-link {
+  transition-delay: .1s;
+}
+
+.nav-list .nav-item:nth-child(2) .nav-link {
+  transition-delay: .2s;
+}
+
+.nav-list .nav-item:nth-child(3) .nav-link {
+  transition-delay: .3s;
+}
+
+.nav-list .nav-item:nth-child(4) .nav-link {
+  transition-delay: .4s;
+}
+
+.nav-list .nav-item:nth-child(5) .nav-link {
+  transition-delay: .5s;
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav-list {
+      width: 100%;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--color2);
+      position: fixed;
+      left: 0;
+      bottom: -100vh;
+      transform: bottom 650ms;
+    }
+
+    .nav-list.active {
+      bottom: 0;
+    }
+
+}
+</style>
+ <body>
+    <div class="container-fluid">
+        <div class="row n  bg-dark p-4  ">
+            <div class="col-md-9 col-sm-11 n1">
+                <ul class = "list-unstyled d-flex">
+                    <li class="text-light me-5"><i class="fa-solid fa-phone me-2"></i>+92357643578</li>
+                    <li class="text-light me-5"><i class="fa-solid fa-envelope me-2"></i>info@alsadateducation.com</li>
+                    <li class="text-light me-5"><i class="fa-solid fa-address-card me-2"></i>Online student Registration
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-2 n2">
+                <ul class="text-light list-unstyled d-flex">
+                    <li class="text-light"><i class="fa-brands fa-facebook"></i></li>
+                    <li class="text-light ms-4"><i class="fa-brands fa-instagram"></i></li>
+                    <li class="text-light ms-4"><i class="fa-brands fa-twitter"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+            <nav class =" text-light">
+                <a class="navbar-brand nav0" href="#">AL-SADAT <br>EDUCATIONAL</a>
+                    <ul class ="nav-list">
+                        <li class = "nav-item">
+                            <a class = "nav-link  active" href="" > Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link  active" href="" > Locate Us</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link active" href="" > Contact Us</a>
+                        </li>
+                        <li class = "nav-item">
+                        <a class = "nav-link active" href="" > Addmission</a>
+                        </li>
+                    </ul>
+                    <div class = "hamburger">
+                        <button class ="line btn btn-primary text-danger"></button>
+                        <button class ="line btn btn-primary"></button>
+                        <button class ="line btn btn-primary"></button>
+                    </div>
+            </nav>
+        </div>
+
+    <!-- script(src="assets/js/index.js") -->
+    <script>
+        const elment = document.querySelector('.hamburger');
+        const elment1 = document.querySelector('.nav-list');
+        elment.addEventListener("click", ()=> {
+        elment.classList.toggle('active');
+        elment1.classList.toggle('active');
+        })
+    </script>
+
+</body>
+</html>

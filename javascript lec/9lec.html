@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let arr = [1,2,3,4,5,6,7,8];
+        // arr=arr.slice(3,6);
+        // document.write(arr);
+         
+        // let arr = [1,2,3,4,5,6,7,8];
+        // arr.unshift(0);
+        // document.write(arr);
+
+        // let arr = [1,2,3,4,5,6,7,8];
+        // arr.shift()
+        // document.write(arr);
+
+        // let arr = [1,2,3,4,5,6,7,8];
+        // arr.push('HTML')
+        // document.write(arr);
+
+        // let arr = [1,2,3,4,5,6,7,8];
+        // arr.pop();
+        // document.write(arr);
+
+        // let arr = [1,2,3,4,5,6,7,8];
+        // arr.reverse();
+        // document.write(arr);
+    </script>
+     
+    <input type="text" id="input1">
+    <input type="text" id="input2">
+    <button id="BTN">Click Me</button>
+    <script>
+        let input1 = document.getElementById("input1");
+        let input2 = document.getElementById("input2");
+        let btn = document.getElementById("BTN");
+        btn.addEventListener('click',function() { 
+            if ( input1.value + input2.value > 0 ) {
+                alert("Code is Running");
+            }
+            else {
+                alert("null");
+            }
+            let z = parseInt(input1.value) + parseInt(input2.value);
+            console.log(z);
+        })
+    </script>
+</body>
+</html>

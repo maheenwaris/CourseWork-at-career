@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .tbl{
+            background-color: brown;
+            color: chocolate;
+        }
+    </style>
+    <script>
+
+        let cars = ['BMW','CITY','SAGA','KIA','TOYOTA','SUZUKI'];
+        for (let a = 1; cars.length > a; a++) {
+            document.write(cars[a] + "<br>");
+            console.log(cars[a]);
+        }
+        let x = 0;
+
+        do {
+            //document.write(x+"<br>")
+            document.write("<table border class='tbl'><tr><td>"+cars[x],"</td></tr></table>");
+            x++;
+        } while(cars[x]) 
+    </script>
+</body>
+</html>
+
+

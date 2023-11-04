@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+.carousel section {
+  background: #003C56;
+  color: #003C56;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  /* min-height: 80vh; */
+  /* margin-bottom: -30%; */
+  overflow-x: hidden;
+}
+.carousel{
+  width: 90%;
+
+  padding: 0px 40px;
+}
+ .swiper-container{
+  width: 100%;
+  height: 100%;
+}
+ .swiper-slide {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 15px;
+  text-align: start;
+  box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+ 
+}
+.swiper-slide img{
+   display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+} .swiper-slide .card-description{
+    padding:1rem 1rem;
+} .swiper-slide .card-title, .swiper-slide .card-text{
+   margin-bottom: .5rem;
+}
+.swiper-slide .card-link{
+   text-align: center;
+  
+}
+.swiper-slide .card-link a{
+    text-decoration: none;
+    color: #1d6ce2;
+}
+.swiper-button-next{
+    right: 60px !important;
+    margin-top: -13%;
+    color:black;
+}
+.swiper-button-prev{
+    left: 26px !important;
+    margin-top: -13%;
+    color:black;
+}
+
+    </style>
+
+<div class="container carousel">
+    <section>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-container mySwiper">
+     
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="img/logo.jpg" alt="">
+                    <div class="card-description">
+                        <div class="card-title">
+                            <h4>Descripción</h4>
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non,</p>
+                        </div>
+                        <div class="card-link">
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="img/logo.jpg" alt="">
+                    <div class="card-description">
+                        <div class="card-title">
+                            <h4>Descripción</h4>
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non,</p>
+                        </div>
+                        <div class="card-link">
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="img/logo.jpg" alt="">
+                    <div class="card-description">
+                        <div class="card-title">
+                            <h4>Descripción</h4>
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non,</p>
+                        </div>
+                        <div class="card-link">
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+   
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev'
+	},
+	slidesPerView: 1,
+	spaceBetween: 10,
+	// init: false,
+	pagination: {
+	  el: '.swiper-pagination',
+	  clickable: true,
+	},
+
+	breakpoints: {
+	  620: {
+		slidesPerView: 1,
+		spaceBetween: 20,
+	  },
+	  680: {
+		slidesPerView: 2,
+		spaceBetween: 40,
+	  },
+	  920: {
+		slidesPerView: 3,
+		spaceBetween: 40,
+	  },
+	  1240: {
+		slidesPerView: 4,
+		spaceBetween: 50,
+	  },
+	} 
+    });
+</script>
+
+</section>
+</body>
+</html>
